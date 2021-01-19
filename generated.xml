@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Security xmlns="http://schemas.xmlsoap.org/ws/2002/04/secext">
+      <UsernameToken>
+        <Username>USER1@DS_MP_1</Username>
+        <Password>123456</Password>
+      </UsernameToken>
+    </Security>
+    <SessionScenario xmlns="http://schemas.datastream.net/headers">terminate</SessionScenario>
+    <Organization xmlns="http://schemas.datastream.net/headers">ORG1</Organization>
+  </Header>
+  <Body>
+    <MP7914_GetWorkOrderActivityCheckList_001 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" verb="Get" noun="WorkOrderActivityCheckList" version="001" xmlns="http://schemas.datastream.net/MP_functions/MP7914_001">
+      <CHECKLISTCODE xmlns="http://schemas.datastream.net/MP_fields">CHECKLISTCODE1</CHECKLISTCODE>
+    </MP7914_GetWorkOrderActivityCheckList_001>
+  </Body>
+</Envelope>
